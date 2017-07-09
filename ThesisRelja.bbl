@@ -1,0 +1,81 @@
+\begin{thebibliography}{10}
+
+\bibitem{Alaya2014}
+{\sc Alaya, M.~B., Banouar, Y., Monteil, T., Chassot, C., and Drira, K.}
+\newblock {OM2M : Extensible ETSI-compliant M2M service platform with
+  self-configuration capability}.
+\newblock {\em Procedia - Procedia Computer Science 32\/} (2014), 1079--1086.
+
+\bibitem{Bandyopadhyay2011}
+{\sc Bandyopadhyay, D., and Sen, J.}
+\newblock Internet of things: Applications and challenges in technology and
+  standardization.
+\newblock {\em Wireless Personal Communications 58}, 1 (2011), 49--69.
+
+\bibitem{Brasser}
+{\sc Brasser, F., Mahjoub, B.~E., Sadeghi, A.-r., Wachsmann, C., and Koeberl,
+  P.}
+\newblock {TyTAN: Tiny Trust Anchor for Tiny Devices}.
+
+\bibitem{Control2014}
+{\sc Control, E., and Security, S.}
+\newblock {Detecting Industrial Control Malware Using Automated PLC Code
+  Analytics}.
+
+\bibitem{Smart}
+{\sc Defrawy, K.~E., Perito, D., and Tsudik, G.}
+\newblock {SMART : Secure and Minimal Architecture for (Establishing a Dynamic)
+  Root of Trust}.
+
+\bibitem{ETSI1}
+{\sc ETSI}.
+\newblock Machine-to-machine communications (m2m); functional architecture,
+  2013.
+
+\bibitem{Grieco2014}
+{\sc Grieco, L.~A., Alaya, M.~B., Monteil, T., Drira, K., and Bari, P.}
+\newblock {Architecting Information Centric ETSI-M2M systems}.
+\newblock 211--214.
+
+\bibitem{Kantola}
+{\sc Kantola, R., and Beijar, N.}
+\newblock {Policy Based Communications for 5G Mobile with Customer Edge
+  Switching}.
+
+\bibitem{TrustLite}
+{\sc Koeberl, P., Schulz, S., and Sadeghi, A.-r.}
+\newblock {TrustLite : A Security Architecture for Tiny Embedded Devices}.
+
+\bibitem{Sanctus}
+{\sc Noorman, J., Agten, P., Daniels, W., and Strackx, R.}
+\newblock {Sancus : Low-cost trustworthy extensible networked devices with a
+  zero-software Trusted Computing Base}.
+
+\bibitem{Palattella2016}
+{\sc Palattella, M.~R., Dohler, M., Grieco, A., Rizzo, G., Torsner, J., Engel,
+  T., and Ladid, L.}
+\newblock {Internet of Things in the 5G Era: Enablers, Architecture, and
+  Business Models}.
+\newblock 510--527.
+
+\bibitem{Park2016}
+{\sc Park, H., Kim, H., Joo, H., and Song, J.}
+\newblock {Recent advancements in the Internet-of-Things related standards : A
+  oneM2M perspective}.
+\newblock {\em ICT Express 2}, 3 (2016), 126--129.
+
+\bibitem{Rao2015}
+{\sc Rao, S., Chendanda, D., Deshpande, C., and Lakkundi, V.}
+\newblock {Implementing LWM2M in Constrained IoT Devices}.
+\newblock 52--57.
+
+\bibitem{SPM}
+{\sc Raoul~Strackx, Frank~Piessens, B.~P.}
+\newblock {Efficient isolation of trusted subsystems in embedded systems}.
+
+\bibitem{Sadeghi2015}
+{\sc Sadeghi, A., Wachsmann, C., and Waidner, M.}
+\newblock {Security and privacy challenges in industrial internet of things}.
+\newblock {\em Proceedings of the 52nd\/} (2015).
+
+\end{thebibliography}
