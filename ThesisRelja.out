@@ -3,26 +3,29 @@
 \BOOKMARK [0][]{bookmark.0.contents.0}{Contents}{}% 3
 \BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 4
 \BOOKMARK [1][-]{section.1.1}{1.1 Problem statement}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{1.2 Outline}{chapter.1}% 6
-\BOOKMARK [0][]{chapter.2}{2 Literature Review}{}% 7
-\BOOKMARK [1][-]{section.2.1}{2.1 Internet of Things}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Industrial Internet of Things}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Open Issues}{section.2.1}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.2.1}{2.1.2.1 Standardization}{subsection.2.1.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.1.2.2}{2.1.2.2 Security and privacy}{subsection.2.1.2}% 12
-\BOOKMARK [1][-]{section.2.2}{2.2 Light Weight Machine to Machine \(LWM2M\)}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{2.3 Policy Based Communications for 5G Mobile with Customer Edge Switching}{chapter.2}% 14
-\BOOKMARK [0][]{chapter.3}{3 Requirements}{}% 15
-\BOOKMARK [1][-]{section.3.1}{3.1 Context}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 UseCase1}{section.3.1}% 17
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 UseCase2}{section.3.1}% 18
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 KoneCranes}{section.3.1}% 19
-\BOOKMARK [1][-]{section.3.2}{3.2 Stakeholders KoneCranes}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{3.3 Security}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Authentication}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Authorization?}{section.3.3}% 23
-\BOOKMARK [1][-]{section.3.4}{3.4 User Experience}{chapter.3}% 24
-\BOOKMARK [0][]{chapter.4}{4 Prototype Implementation}{}% 25
-\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 26
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 27
-\BOOKMARK [0][]{appendix.A}{A KoneCranes Use Case}{}% 28
+\BOOKMARK [1][-]{section.1.2}{1.2 Methodology}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{1.3 Outline}{chapter.1}% 7
+\BOOKMARK [0][]{chapter.2}{2 Literature Review}{}% 8
+\BOOKMARK [1][-]{section.2.1}{2.1 Internet of Things}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Industrial Internet of Things}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Open Issues}{section.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{2.1.2.1 Standardization}{subsection.2.1.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{2.1.2.2 Security and privacy}{subsection.2.1.2}% 13
+\BOOKMARK [1][-]{section.2.2}{2.2 Light Weight Machine to Machine \(LWM2M\)}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{2.3 Policy Based Communications for 5G Mobile with Customer Edge Switching}{chapter.2}% 15
+\BOOKMARK [0][]{chapter.3}{3 Requirements}{}% 16
+\BOOKMARK [1][-]{section.3.1}{3.1 Context}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Smart Traffic}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Connected Goods}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Smart Crane}{section.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.3.1}{3.1.3.1 Maintenance}{subsection.3.1.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.3.2}{3.1.3.2 Users of the Crane}{subsection.3.1.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.3.3}{3.1.3.3 KoneCranes}{subsection.3.1.3}% 23
+\BOOKMARK [1][-]{section.3.2}{3.2 Security}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Authentication}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Authorization?}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{3.3 User Experience}{chapter.3}% 27
+\BOOKMARK [0][]{chapter.4}{4 Prototype Implementation}{}% 28
+\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 29
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 30
+\BOOKMARK [0][]{appendix.A}{A Appendix A}{}% 31
