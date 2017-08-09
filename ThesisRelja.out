@@ -21,11 +21,22 @@
 \BOOKMARK [3][-]{subsubsection.3.1.3.1}{3.1.3.1 Maintenance}{subsection.3.1.3}% 21
 \BOOKMARK [3][-]{subsubsection.3.1.3.2}{3.1.3.2 Users of the Crane}{subsection.3.1.3}% 22
 \BOOKMARK [3][-]{subsubsection.3.1.3.3}{3.1.3.3 KoneCranes}{subsection.3.1.3}% 23
-\BOOKMARK [1][-]{section.3.2}{3.2 Security}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Authentication}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Authorization?}{section.3.2}% 26
-\BOOKMARK [1][-]{section.3.3}{3.3 User Experience}{chapter.3}% 27
-\BOOKMARK [0][]{chapter.4}{4 Prototype Implementation}{}% 28
-\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 29
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 30
-\BOOKMARK [0][]{appendix.A}{A Appendix A}{}% 31
+\BOOKMARK [1][-]{section.3.2}{3.2 Security }{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Access Control}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Authentication}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Authorization?}{section.3.2}% 27
+\BOOKMARK [1][-]{section.3.3}{3.3 User Experience \205 FUNCTIONAL REQUIREMENTS}{chapter.3}% 28
+\BOOKMARK [0][]{chapter.4}{4 Prototype Implementation}{}% 29
+\BOOKMARK [1][-]{section.4.1}{4.1 Technologies Used}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Django Framework}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Bootstrap}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{4.2 Overview}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Account Types}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Device Management}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Policy Management}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{4.3 Manufacturer}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.4}{4.4 Customer}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.5}{4.5 User}{chapter.4}% 39
+\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 40
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 41
+\BOOKMARK [0][]{appendix.A}{A Appendix A}{}% 42
