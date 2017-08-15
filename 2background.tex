@@ -91,10 +91,11 @@ In LWM2M Enabler, each individually addressable piece of information is called a
 \end{figure}
 
 \section{Policy Based Communications for 5G Mobile with Customer Edge Switching}
+\label{CES}
 
 Particularly interesting work by \cite{Kantola} proposes a policy based communication with built in security, while also addressing classical weaknesses of Internet, namely, address spoofing, unwanted traffic and DoS attacks. It is based on a principle that before establishing communication between two hosts (or networks) they need to negotiate interests, and only if they are matching communication is established. These interests are described with a policy.
 
-This work proposes to replace Network Address Translator (NAT) from the edge of the network with their own Customer Edge Switch (CES) node. This node will act exactly like NAT if the sender, who is behind a CES node, is interacting with receiver using legacy ip. On the other hand, if the situation is reversed CES node will act as a \emph{realm gateway}. Only if both actors are behind CES node it will act as a cooperative firewall negotiating interests of sender and receiver. Because of this, CES can be applied one network at a time making it suitable for IIOT purposes where vertical fragmentation is a big issue.
+This work proposes to replace Network Address Translator (NAT) from the edge of the network with their own Customer Edge Switch (CES) node. This node will act exactly like NAT if the sender, who is behind a CES node, is interacting with a receiver using legacy ip. On the other hand, if the situation is reversed CES node will act as a \emph{realm gateway}. Only if both actors are behind CES node it will act as a cooperative firewall negotiating interests of sender and receiver. Because of this, CES can be applied one network at a time making it suitable for IIOT purposes where vertical fragmentation is a big issue.
 
 Furthermore, CES allows efficient communication by dropping unwanted traffic at the edge and in that way reducing amount of traffic that passes trough network. Also, CES makes use of Domain Name Servers (DNS) to find receivers faster using Fully Qualified Domain Names (FQDN) and MS-ISDN numbers.
 
