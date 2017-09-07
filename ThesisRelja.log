@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.12)  14 AUG 2017 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,7 +852,7 @@ LaTeX Info: Redefining \nameref on input line 395.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/aalto-logo-en.pdf,
- id=183, 302.3837pt x 132.96776pt>
+ id=199, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
@@ -873,10 +873,10 @@ Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 441.
 
  [6] (./1introduction.tex
 Chapter 1.
-) (./2background.tex [1
+[1
 
 
-]
+] [2]) (./2background.tex [3]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
@@ -884,206 +884,260 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--14
 connected-devices-
  []
 
-[2
+[4
 
 ]
-Overfull \hbox (2.67511pt too wide) in paragraph at lines 39--41
+Overfull \hbox (2.67511pt too wide) in paragraph at lines 36--38
 \OT1/cmr/m/n/12 According to Global Stan-dards Col-lab-o-ra-tion Machine-to-Mac
 hine Task Force
  []
 
-[3]
-Overfull \hbox (15.5671pt too wide) in paragraph at lines 44--45
+[5]
+Overfull \hbox (15.5671pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/n/12 Com-mu-ni-ca-tions Stan-dards As-so-ci-a-tion (CCSA), China; th
 e Eu-ro-pean Telecom-
  []
 
 
-Overfull \hbox (29.50677pt too wide) in paragraph at lines 46--47
+Overfull \hbox (29.50677pt too wide) in paragraph at lines 43--44
 \OT1/cmr/m/n/12 tar-get-ing con-strained de-vices named Light Weight Machine-to
 -Machine (LWM2M).
  []
 
-[4]
-Overfull \hbox (33.08981pt too wide) in paragraph at lines 56--56
-|[]\OT1/cmr/bx/n/17.28 Light Weight Ma-chine to Ma-chine (LWM2M)| 
- []
-
-[5] <images/LWM2M-Architecture.png, id=327, 845.1575pt x 490.83376pt>
+[6] [7] <images/LWM2M-Architecture.png, id=374, 845.1575pt x 490.83376pt>
 File: images/LWM2M-Architecture.png Graphic file (type png)
 
 <use images/LWM2M-Architecture.png>
-Package pdftex.def Info: images/LWM2M-Architecture.png used on input line 65.
+Package pdftex.def Info: images/LWM2M-Architecture.png used on input line 68.
 (pdftex.def)             Requested size: 390.0pt x 226.49776pt.
- [6 <./images/LWM2M-Architecture.png>]
-<images/InterfacesLWM2M.pdf, id=340, 1232.605pt x 302.12875pt>
-File: images/InterfacesLWM2M.pdf Graphic file (type pdf)
+ [8]
+<images/LWM2M-Interfaces.png, id=388, 1232.605pt x 301.125pt>
+File: images/LWM2M-Interfaces.png Graphic file (type png)
 
-<use images/InterfacesLWM2M.pdf>
-Package pdftex.def Info: images/InterfacesLWM2M.pdf used on input line 87.
-(pdftex.def)             Requested size: 390.0pt x 95.59058pt.
+<use images/LWM2M-Interfaces.png>
+Package pdftex.def Info: images/LWM2M-Interfaces.png used on input line 90.
+(pdftex.def)             Requested size: 390.0pt x 95.273pt.
+ [9 <./images/LWM2M-Architecture.png>]
+<images/WOTWebservers.png, id=396, 804.00375pt x 402.50375pt>
+File: images/WOTWebservers.png Graphic file (type png)
 
-Overfull \hbox (3.74367pt too wide) in paragraph at lines 93--93
+<use images/WOTWebservers.png>
+Package pdftex.def Info: images/WOTWebservers.png used on input line 102.
+(pdftex.def)             Requested size: 390.0pt x 195.23865pt.
+ [10 <./images/LWM2M-Interfaces.png> <./images/WOTWebservers.png>] <images/WOT.
+png, id=405, 932.48375pt x 799.98875pt>
+File: images/WOT.png Graphic file (type png)
+
+<use images/WOT.png>
+Package pdftex.def Info: images/WOT.png used on input line 114.
+(pdftex.def)             Requested size: 390.0pt x 334.5892pt.
+ [11 <./images/WOT.png>]
+Overfull \hbox (3.74367pt too wide) in paragraph at lines 124--124
 |[]\OT1/cmr/bx/n/17.28 Policy Based Com-mu-ni-ca-tions for 5G Mo-
  []
 
-[7 <./images/InterfacesLWM2M.pdf>]
-<images/PolicyBasedCommunicationExample.pdf, id=396, 1305.87875pt x 566.115pt>
+
+<images/PolicyBasedCommunicationExample.pdf, id=415, 1305.87875pt x 566.115pt>
 File: images/PolicyBasedCommunicationExample.pdf Graphic file (type pdf)
 
 <use images/PolicyBasedCommunicationExample.pdf>
 Package pdftex.def Info: images/PolicyBasedCommunicationExample.pdf used on inp
-ut line 106.
+ut line 137.
 (pdftex.def)             Requested size: 390.0pt x 169.067pt.
-) (./3requirements.tex [8 <./images/PolicyBasedCommunicationExample.pdf>]
+) (./3requirements.tex [12]
+[13 <./images/PolicyBasedCommunicationExample.pdf>]
 Chapter 3.
-[9
+<images/KoneCranes-CraneK16052.jpg, id=433, 501.875pt x 376.40625pt>
+File: images/KoneCranes-CraneK16052.jpg Graphic file (type jpg)
 
-] [10] [11] [12]) (./4implementation.tex [13]
-Chapter 4.
+<use images/KoneCranes-CraneK16052.jpg>
+Package pdftex.def Info: images/KoneCranes-CraneK16052.jpg used on input line 1
+7.
+(pdftex.def)             Requested size: 390.0pt x 292.5159pt.
+ [14
 
-Overfull \hbox (72.77928pt too wide) in paragraph at lines 10--12
-\OT1/cmr/m/sc/10.95 !Fixme \OT1/cmr/bx/n/12 Men-tion which parts of django do I
- use, like lo-gin(authentication)/logout,
+] [15 <./images/KoneCranes-CraneK16052.jpg>] [16] [17] [18]
+Overfull \hbox (16.146pt too wide) in paragraph at lines 119--121
+\OT1/cmr/m/sc/10.95 !Fixme \OT1/cmr/bx/n/12 Talk about gen-eral se-cu-rity es-p
+e-cially of de-vices,Authentication
  []
 
-[14
+[19] [20] [21] [22]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 186.
 
-] [15] <images/Functionalities.png, id=440, 834.11626pt x 325.215pt>
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
+)
+(./4implementation.tex [23]
+Chapter 4.
+[24
+
+] [25] [26] <images/Functionalities.png, id=533, 834.11626pt x 325.215pt>
 File: images/Functionalities.png Graphic file (type png)
 
 <use images/Functionalities.png>
-Package pdftex.def Info: images/Functionalities.png used on input line 35.
+Package pdftex.def Info: images/Functionalities.png used on input line 61.
 (pdftex.def)             Requested size: 390.0pt x 152.05708pt.
-
-<images/Device.png, id=443, 667.49374pt x 175.65625pt>
+ [27]
+<images/Device.png, id=541, 667.49374pt x 175.65625pt>
 File: images/Device.png Graphic file (type png)
  <use images/Device.png>
-Package pdftex.def Info: images/Device.png used on input line 50.
+Package pdftex.def Info: images/Device.png used on input line 76.
 (pdftex.def)             Requested size: 390.0pt x 102.63385pt.
 
-[16 <./images/Functionalities.png>] [17 <./images/Device.png>] [18]
-<images/implementation/CreateCustomer.png, id=473, 329.23pt x 210.7875pt>
+[28 <./images/Functionalities.png> <./images/Device.png>] [29]
+<images/implementation/CreateCustomer.png, id=565, 329.23pt x 210.7875pt>
 File: images/implementation/CreateCustomer.png Graphic file (type png)
 
 <use images/implementation/CreateCustomer.png>
 Package pdftex.def Info: images/implementation/CreateCustomer.png used on input
- line 87.
+ line 113.
 (pdftex.def)             Requested size: 155.99762pt x 99.87744pt.
 
-<images/implementation/UpdateAccount.png, id=474, 339.2675pt x 226.8475pt>
+<images/implementation/UpdateAccount.png, id=566, 339.2675pt x 226.8475pt>
 File: images/implementation/UpdateAccount.png Graphic file (type png)
 
 <use images/implementation/UpdateAccount.png>
 Package pdftex.def Info: images/implementation/UpdateAccount.png used on input 
-line 95.
+line 121.
 (pdftex.def)             Requested size: 155.99762pt x 104.3061pt.
-
-<images/implementation/AddMachineDevice.png, id=476, 854.19125pt x 311.1625pt>
+ [30 <./images/implementation/CreateCustomer.png>]
+<images/implementation/AddMachineDevice.png, id=575, 841.1425pt x 281.05pt>
 File: images/implementation/AddMachineDevice.png Graphic file (type png)
 
 <use images/implementation/AddMachineDevice.png>
 Package pdftex.def Info: images/implementation/AddMachineDevice.png used on inp
-ut line 105.
-(pdftex.def)             Requested size: 390.0pt x 142.06819pt.
- [19 <./images/implementation/CreateCustomer.png> <./images/implementation/Upda
-teAccount.png>]
-<images/implementation/ManageDevicesCompany.png, id=487, 723.70375pt x 430.6087
+ut line 131.
+(pdftex.def)             Requested size: 390.0pt x 130.30951pt.
+
+<images/implementation/AddTemplate.png, id=577, 876.27374pt x 259.97125pt>
+File: images/implementation/AddTemplate.png Graphic file (type png)
+
+<use images/implementation/AddTemplate.png>
+Package pdftex.def Info: images/implementation/AddTemplate.png used on input li
+ne 142.
+(pdftex.def)             Requested size: 390.0pt x 115.70468pt.
+ [31 <./images/implementation/UpdateAccount.png> <./images/implementation/AddMa
+chineDevice.png>]
+<images/implementation/AddMachineViaTemplate.png, id=588, 621.32124pt x 213.798
+75pt>
+File: images/implementation/AddMachineViaTemplate.png Graphic file (type png)
+ <use images/implementation/AddMachineViaTemplate.png>
+Package pdftex.def Info: images/implementation/AddMachineViaTemplate.png used o
+n input line 152.
+(pdftex.def)             Requested size: 390.0pt x 134.20131pt.
+
+<images/implementation/ManageDevicesCompany.png, id=590, 723.70375pt x 430.6087
 5pt>
 File: images/implementation/ManageDevicesCompany.png Graphic file (type png)
  <use images/implementation/ManageDevicesCompany.png>
 Package pdftex.def Info: images/implementation/ManageDevicesCompany.png used on
- input line 115.
+ input line 162.
 (pdftex.def)             Requested size: 390.0pt x 232.05217pt.
-
-<images/implementation/DeviceDetailsUpdate.png, id=490, 314.17375pt x 289.08pt>
+ [32 <./images/implementation/AddTemplate.png> <./images/implementation/AddMach
+ineViaTemplate.png>]
+<images/implementation/DeviceDetailsUpdate.png, id=601, 314.17375pt x 289.08pt>
 File: images/implementation/DeviceDetailsUpdate.png Graphic file (type png)
 <use images/implementation/DeviceDetailsUpdate.png>
 Package pdftex.def Info: images/implementation/DeviceDetailsUpdate.png used on 
-input line 125.
+input line 172.
 (pdftex.def)             Requested size: 155.99762pt x 143.53392pt.
 
-<images/implementation/DeviceAssignment.png, id=493, 317.185pt x 238.8925pt>
+<images/implementation/DeviceAssignment.png, id=604, 317.185pt x 238.8925pt>
 File: images/implementation/DeviceAssignment.png Graphic file (type png)
 
 <use images/implementation/DeviceAssignment.png>
 Package pdftex.def Info: images/implementation/DeviceAssignment.png used on inp
-ut line 135.
+ut line 182.
 (pdftex.def)             Requested size: 155.99762pt x 117.49576pt.
- [20 <./images/implementation/AddMachineDevice.png>]
-<images/implementation/CreateUser.png, id=504, 353.32pt x 263.98625pt>
+
+<images/implementation/CreateUser.png, id=606, 353.32pt x 263.98625pt>
 File: images/implementation/CreateUser.png Graphic file (type png)
 
 <use images/implementation/CreateUser.png>
 Package pdftex.def Info: images/implementation/CreateUser.png used on input lin
-e 148.
+e 196.
 (pdftex.def)             Requested size: 234.00238pt x 174.83969pt.
- [21 <./images/implementation/ManageDevicesCompany.png>]
-<images/implementation/ManagePolicies.png, id=513, 1117.17375pt x 410.53375pt>
+ [33 <./images/implementation/ManageDevicesCompany.png>]
+<images/implementation/SubscribeToManufacturer.png, id=616, 336.25626pt x 125.4
+6875pt>
+File: images/implementation/SubscribeToManufacturer.png Graphic file (type png)
+
+ <use images/implementation/SubscribeToManufacturer.png>
+Package pdftex.def Info: images/implementation/SubscribeToManufacturer.png used
+ on input line 206.
+(pdftex.def)             Requested size: 234.00238pt x 87.31442pt.
+ [34 <./images/implementation/DeviceDetailsUpdate.png> <./images/implementation
+/DeviceAssignment.png>]
+<images/implementation/ManagePolicies.png, id=627, 1117.17375pt x 410.53375pt>
 File: images/implementation/ManagePolicies.png Graphic file (type png)
 
 <use images/implementation/ManagePolicies.png>
 Package pdftex.def Info: images/implementation/ManagePolicies.png used on input
- line 161.
+ line 219.
 (pdftex.def)             Requested size: 390.0pt x 143.31311pt.
-
-<images/implementation/PolicyOverview.png, id=514, 337.26pt x 254.9525pt>
+ [35 <./images/implementation/CreateUser.png> <./images/implementation/Subscrib
+eToManufacturer.png>]
+<images/implementation/PolicyOverview.png, id=635, 772.8875pt x 235.88126pt>
 File: images/implementation/PolicyOverview.png Graphic file (type png)
 
 <use images/implementation/PolicyOverview.png>
 Package pdftex.def Info: images/implementation/PolicyOverview.png used on input
- line 171.
-(pdftex.def)             Requested size: 234.00238pt x 176.89774pt.
-) (./5evaluation.tex [22 <./images/implementation/DeviceDetailsUpdate.png> <./i
-mages/implementation/DeviceAssignment.png>] [23 <./images/implementation/Create
-User.png> <./images/implementation/ManagePolicies.png>] [24 <./images/implement
-ation/PolicyOverview.png>]
+ line 229.
+(pdftex.def)             Requested size: 234.00238pt x 71.41638pt.
+) (./5evaluation.tex [36 <./images/implementation/ManagePolicies.png> <./images
+/implementation/PolicyOverview.png>]
 Chapter 5.
-) (./6conclusion.tex [25
+) (./6conclusion.tex [37
 
 ]
 Chapter 6.
-) (./ThesisRelja.bbl [26
+) (./ThesisRelja.bbl [38
 
-] [27
+] [39
 
-]) (./appendices.tex [28]
+]) (./appendices.tex [40]
 Appendix A.
 ) 
 AED: lastpage setting LastPage
-[29
+[41
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 546.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 546.
  (./ThesisRelja.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 546.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 546.
 Package rerunfilecheck Info: File `ThesisRelja.out' has not changed.
-(rerunfilecheck)             Checksum: FC4D6B3ADA8A46BCA665E02CA5799F4A;2911.
+(rerunfilecheck)             Checksum: 7BF707860FB72313C3C7010E3080F3B2;3359.
  ) 
 Here is how much of TeX's memory you used:
- 21021 strings out of 494953
- 416993 string characters out of 6180977
- 514203 words of memory out of 5000000
- 23736 multiletter control sequences out of 15000+600000
- 12555 words of font info for 45 fonts, out of 8000000 for 9000
+ 21147 strings out of 494953
+ 419233 string characters out of 6180977
+ 514865 words of memory out of 5000000
+ 23792 multiletter control sequences out of 15000+600000
+ 12914 words of font info for 46 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 55i,12n,67p,1291b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,67p,1291b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb>
-Output written on ThesisRelja.pdf (35 pages, 780186 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb>
+Output written on ThesisRelja.pdf (47 pages, 1005127 bytes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
- 512 compressed objects within 6 object streams
- 124 named destinations out of 1000 (max. 500000)
- 424 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 636 compressed objects within 7 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 486 words of extra memory for PDF output out of 10000 (max. 10000000)
 

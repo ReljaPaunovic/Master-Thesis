@@ -1,9 +1,40 @@
 \chapter{Introduction}
 
-\fixme{Contracting Service, IOT, IIOT, hint of use cases(context),...}
+In the past few decades, vision of a world where sensors and actuators are installed everywhere is becoming real. Today, we have wearable health monitors with direct contact with a physician, smart pet feeders choosing perfect food for your pet and smart toothbrush that gamifies mundane task of brushing teeth. These are just a few examples from the sea of different smart solutions and more are emerging every day creating an Internet Of Things (IOT). Parallel to the development of IOT for mass use, IOT is being developed for industrial purposes known as Industrial Internet Of Things (IIOT). For example, smart indoor cranes packed with many features, including sensing of obstructions and material wear off, and reporting of its location. These features are used by different actors in the ecosystem, such as maintenance companies being interested in usage statistics or worker supervisor in a factory monitoring how the workers are operating the crane. Since these ecosystems can be very large, robust security architectures are required to battle classical weaknesses of the Internet.
 
-\section{Problem statement}
+As a result of rapid development in the area, substantial vertical fragmentation has emerged, where large corporations have created their own proprietary systems. Since the development of these systems has been mostly independent from each other, they differ greatly and are incompatible with each other. As an attempt to solve this fragmentation, many standardization agencies have proposed their solutions. Most notable solutions are developed by Open Mobile Alliance (OMA) and World Wide Web Consortium (W3C) which will be described thoroughly in chapter ~\ref{chapter:background}. Although, none of the standardization attempts have yet been widely accepted and implemented.
 
-\section{Methodology}
+This thesis proposes a solution that will allow easy management of access to devices in a secure and robust way. It is a web platform where manufacturers can assign machines and devices to customers that have bought them. Customers can then declare who has access to those devices by simply adding or removing policies in a centralized database. This thesis is based on a Light-weight Machine-to-Machine (LWM2M) standard proposed by OMA and Policy Based Communication proposed by \cite{Kantola} which will be thoroughly described in chapter ~\ref{chapter:background}.
+
+\section{Research Question}
+
+As mentioned above the main focus of this thesis is to design a technical solution for management and organization of millions of devices in a secure way. Thus, a problem that this thesis is aiming to solve is:
+
+\begin{center}
+\emph{"How to design a solution for easy and secure access management to large number of devices?"}
+\end{center}
+
+In order to answer this question, several sub questions needs to be addressed first:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item What are the requirements of such a solution?
+	\item What are necessary components of such a solution?
+	\item Are the requirements met?
+\end{enumerate}
+
+To answer these questions, firstly, relevant research needs to be evaluated. Secondly, use cases of these devices needs to be examined in order to understand the requirements. Thirdly, number of components to meet the requirements needs to be minimized. Finally, links between requirements and actual components needs to be justified.
 
 \section{Outline}
+
+In this chapter I have given background information about IOT and problems related with it in order to explain where this thesis fits. This chapter also gives a hint of use cases and how the solution is going to look like followed by a concise description of which problem I am addressing.
+
+Firstly, in chapter ~\ref{chapter:background} I will describe relevant research. It will explain in more detail what is IOT and IIOT, and what are the differences in my context, followed by description of open questions (and proposed solutions) regarding standardization and security in section ~\ref{section:OpenIssues}. In the remainder of chapter ~\ref{chapter:background} I will give a more detailed description of most promising standardization attempts while highlighting the differences and justifying the choice used for this thesis. In the end of the chapter, I will describe work Policy Based Communications work ~\cite{Kantola} which is a basis for this thesis.
+
+Secondly, chapter ~\ref{chapter:requirements} will give an in depth description of context in which IIOT devices are used through three different use cases, highlighting the similarities and differences between them. After the reader is familiarized with the context, I will list requirements drawn from them.
+
+Thirdly, chapter ~\ref{chapter:implementation} will give a detailed description of prototype implementation I have constructed based on knowledge gathered in chapter ~\ref{chapter:background} and requirements gathered in ~\ref{chapter:requirements}. This chapter will describe technologies used, while giving a justification of why they were chosen for this implementation. In the following sections I will describe all necessary components by describing how to use the solution. This description will be given for all different account types which represent different users of the solution.
+
+Fourthly, chapter ~\ref{chapter:evaluation} shows how the requirements are met in implementation. It will assess every requirement and corresponding component from chapter ~\ref{chapter:implementation}.
+
+Finally, chapter ~\ref{chapter:conclusion} concludes the thesis by giving an answer to the defined research question, summarizes the main findings and gives direction for future work on this topic, highlighting the flaws of this solution and what needs to be done in order to improve it.
