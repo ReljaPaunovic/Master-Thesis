@@ -29,21 +29,28 @@
 \contentsline {subsection}{\numberline {3.2.1}General Requirements}{19}{subsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Security}{20}{subsubsection.3.2.1.1}
 \contentsline {subsubsection}{\numberline {3.2.1.2}User Experience}{20}{subsubsection.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Functional Requirements}{20}{subsubsection.3.2.1.3}
-\contentsline {subsection}{\numberline {3.2.2}Administrator Requirements}{20}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Manufacturer Requirements}{20}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Customer Requirements}{22}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Prototype Implementation}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Technologies Used}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Django Framework}{24}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Bootstrap}{26}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Overview}{26}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Account Types}{26}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Device Management}{27}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Policy Management}{29}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Manufacturer}{30}{section.4.3}
-\contentsline {section}{\numberline {4.4}Customer}{33}{section.4.4}
-\contentsline {section}{\numberline {4.5}User}{36}{section.4.5}
-\contentsline {chapter}{\numberline {5}Evaluation}{37}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{38}{chapter.6}
-\contentsline {chapter}{\numberline {A}Appendix A}{41}{appendix.A}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Functional Requirements}{21}{subsubsection.3.2.1.3}
+\contentsline {subsection}{\numberline {3.2.2}Administrator Requirements}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Manufacturer Requirements}{22}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Customer Requirements}{23}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Prototype Implementation}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Technologies Used}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Django Framework}{26}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Bootstrap}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Overview}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Account Types}{28}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Device Management}{29}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Policy Management}{31}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Manufacturer}{32}{section.4.3}
+\contentsline {section}{\numberline {4.4}Customer}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}User}{38}{section.4.5}
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Evaluation of General Requirements}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Security}{39}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}User Experience}{41}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Functional Requirements}{43}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Evaluation of Administrator Requirements}{43}{section.5.2}
+\contentsline {section}{\numberline {5.3}Evaluation of Manufacturer Requirements}{43}{section.5.3}
+\contentsline {section}{\numberline {5.4}Evaluation of Customer Requirements}{45}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{48}{chapter.6}
+\contentsline {chapter}{\numberline {A}Appendix A}{51}{appendix.A}

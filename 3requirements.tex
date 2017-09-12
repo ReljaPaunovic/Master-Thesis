@@ -116,19 +116,46 @@ Remainder of this section is organized into four subsections. First subsection w
 Following text will describe general requirements for this solution, drawn from the context explained in section ~\ref{section:context}. It will address requirements related to security, user experience and functional requirements not tied to any specific role.
 
 \subsubsection{Security}
-\fixme{Talk about general security especially of devices,Authentication}
-\fixme{talk about most common attacks, like cross site request forgery}
+\label{subsubsection:security}
 
+This work describes a platform that is used manage access to machines and devices. These machines are usually very expensive, and produce data which could reveal trade secrets of their users if unauthorized people get access to them. Moreover, accessing these machines without permission can lead to serious property damage and injuries to people working with them. Therefore, making this platform secure is of great importance. Following list will describe requirements that must hold in order for the platform to be usable:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Only authenticated users can access platform}}: This means that freely creating accounts should not be allowed. Only verified manufacturers and customers should have access to any of it.
+
+	\item \textbf{\textit{Platform needs be to robust against common cyberattacks}}: This requirement is hardest to fulfill since the list of cyberattacks is constantly expanding. Although, providing security for the common ones is possible, while constantly adapting to newly emerging ones. List of common cyberattacks include cross-site request forgery, cross-site scripting, clickjacking, SQL injection and (distributed) denial of service attacks.
+
+	\item \textbf{\textit{Only authorized people can manipulate machines or devices}}: Meaning that as a manufacturer, you can only manipulate machines and devices that you have added to platform. And, as a customer, you can only manipulate machines and devices that are assigned to you.
+
+	\item \textbf{\textit{Users personal information can only be changed by them}}: This requirement protects the identity of a user, while also protecting their privacy. 
+\end{enumerate}
 
 \subsubsection{User Experience}
-\fixme{ Niemens 10 rules of good design?}
+
+Every user interface need to be designed in an intuitive way in order to reduce the amount of effort required to learn how to use it. Well designed interface positively affects the adoption rate which is highly important. Nielsen et. al.~\cite{nielsen199510} has proposed ten rules of thumb required for good design, which are widely accepted as good design rules. These rules are listed and briefly described bellow:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Visibility of system status}}: Users should be informed about what is going on in the system, through easily understandable feedback.
+	\item \textbf{\textit{Match between system and the real world}}: Use real world terms, instead of system oriented terms.
+	\item \textbf{\textit{User control and freedom}}: Support undo and redo of all actions in the system.
+	\item \textbf{\textit{Consistency and standards}}: Follow conventions of the platform.
+	\item \textbf{\textit{Error prevention}}: Make it hard for users to make mistakes.
+	\item \textbf{\textit{Recognition rather than recall}}: Reduce users memory load by making objects, actions, and options visible.
+	\item \textbf{\textit{Flexibility and efficiency of use}}: Allow users to tailor frequent actions.
+	\item \textbf{\textit{Aesthetic and minimalist design}}: Dialogues should not contain information that is irrelevant or rarely needed.
+	\item \textbf{\textit{Help users recognize, diagnose, and recover from errors}}: Error messages should be in plain language, problem should be clearly indicated and solution constructively suggested.
+	\item \textbf{\textit{Help and documentation}}: Provide an easy way to learn how to use the platform.
+\end{enumerate}
 
 \subsubsection{Functional Requirements}
-\fixme{, some stuff like changing user info, checking user info, managing devices/policies for device or set of devices/machine }
+
+All roles in the system, except administrator, have three requirements in common. These requirements are following: users should be able to view their personal information and change it if needed; they should be able to manipulate single devices or all devices attached to a machine in one action, depending on their needs; and a navigation bar needs to be present at all times so that users of the platform can navigate through it.
 
 \subsection{Administrator Requirements}
 
-Administrator of the platform has the simplest role in the system, although he has big responsibility. He is a central, impartial authority that makes sure that the system is running smoothly. Apart from regular responsibilities of system administrator, he is \emph{required to create accounts for manufacturers} and manage them. 
+Administrator of the platform has the simplest role in the system, although he has big responsibility. He is a central, impartial authority that makes sure that the system is running smoothly. Apart from regular responsibilities of a system administrator, he is \emph{required to create accounts for manufacturers} and manage them.
 
 This requirements comes from the fact that, in order to qualify as a manufacturer, you need to have a verified manufacturing company. In order to fully understand the need for this requirement, consider a scenario where everybody is allowed to create an account and pose as a manufacturer. This scenario introduces security concerns, such as a party acting as a manufacturer and assigning fictional devices to a customer, thus affecting customers view of the platform.
 
@@ -156,7 +183,7 @@ Manufacturers of smart industrial machines have a central role in the whole ecos
 
 	\item \textbf{\textit{Manage machines and devices}}: When all necessary machines are added to the system they need to be assigned to customers. It should only be possible to assign machines to the customers of a specific manufacturer (not the customers of different manufacturers). This requirement consists of three smaller requirements:
 		\begin{enumerate}
-			\item \textbf{\textit{Assign machine or device to customer}}: A way to assign a certain machine or device so it becomes visible to the customer needs to be available to the manufacturer.
+			\item \textbf{\textit{Assign machine or device to a customer}}: A way to assign a certain machine or device so it becomes visible to the customer needs to be available to the manufacturer.
 			\item \textbf{\textit{Remove assignment of machine or device}}: Reverting the action of assigning a machine or device to customer needs to be provided in order to account for faulty assignments, or if the machine or device was lent for a certain period of time.
 			\item \textbf{\textit{View assignments}}: In order to control which machines and devices are assigned to whom, an overview of assignments needs to be provided.
 		\end{enumerate}

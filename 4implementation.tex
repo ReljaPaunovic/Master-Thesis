@@ -6,6 +6,7 @@ For the implementation of contracting service I have used Django framework becau
 In this chapter, I will present a brief description of technologies that I used followed by a brief overview of the whole project, showing how different parts fit together before digging into details.
 
 \section{Technologies Used}
+\label{section:technologiesUsed}
 
 In the following text, I will describe two technologies that were used for this implementation in order to give justification of why they are a perfect fit for this project.
 
@@ -25,11 +26,11 @@ Django Framework provides built-in solutions for most of the common tasks that a
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
-	\item User management: including creating users, authenticating users, creating sessions, managing cookies, managing user groups and more.
-	\item Security mechanisms: in order to prevent most common forms of cyberattacks such is cross-site request forgery.
-	\item Support for number of email back-ends.
-	\item Efficient mechanism for creating forms from Models.
-	\item Creating custom decorators to provide authorization for certain groups of users to a view.
+	\item \textbf{\textit{User management}}: including creating users, authenticating users, creating sessions, managing cookies, managing user groups and more.
+	\item \textbf{\textit{Security mechanisms}}: in order to prevent most common forms of cyberattacks such is cross-site request forgery.
+	\item \textbf{\textit{Support for number of email back-ends}}.
+	\item \textbf{\textit{Efficient mechanism for creating forms from Models}}.
+	\item \textbf{\textit{Creating custom decorators to provide authorization for certain groups of users to a view}}.
 \end{enumerate}
 
 Most importantly, Django Framework has an enormous user base and excellent documentation making it very comfortable to work with. Having a big user base means that most of the questions you might have are already answered and easily accessible. These are the reasons I have chosen Django for this so lution.
@@ -90,12 +91,12 @@ Only four different API requests are used in this work. These requests are for i
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
-	\item Target IP address and port - target represents a host wanting to communicate with a device.
-	\item Source IP address and port - representing a device, extracted from a database in my system.
-	\item Start and end of validity timestamps - allowing scheduling of access to devices.
-	\item Direction of communication - representing, whether only reporting of data from the device to the host is allowed, sending data to a device or both.
-	\item Transport protocol - in this case CoAP is used, justification is provided in section ~\ref{section:LWM2M}.
-	\item FQDN or MSISDN - helps speed up the search for receivers as mentioned in section ~\ref{CES} and is used for querying policies.
+	\item \textbf{\textit{Target IP address and port}}: target represents a host wanting to communicate with a device.
+	\item \textbf{\textit{Source IP address and port}}: representing a device, extracted from a database in my system.
+	\item \textbf{\textit{Start and end of validity timestamps}}: allowing scheduling of access to devices.
+	\item \textbf{\textit{Direction of communication}}: representing, whether only reporting of data from the device to the host is allowed, sending data to a device or both.
+	\item \textbf{\textit{Transport protocol}}: in this case CoAP is used, justification is provided in section ~\ref{section:LWM2M}.
+	\item \textbf{\textit{FQDN or MSISDN}}: helps speed up the search for receivers as mentioned in section ~\ref{CES} and is used for querying policies.
 \end{enumerate}
 
 Direction of communication can be bi-directional or uni-directional (from host to device, or device to host). Bi-directional communication is a regular case, when a host sends a request to a device and gets data or acknowledgment in return. Uni-directional communication is useful in cases where the devices just need to send data (for example, temperature readings) to some external host who is subscribed to them, without a possibility of that host controlling the device (for example, sending request for shutdown). Other way around, uni-directional communication from host to a device could be useful in rare cases where a host is allowed to request from a device to do a task, or send data to some other host. Therefore, all three options are supported in this work.
@@ -124,7 +125,7 @@ When manufacturer creates session by logging-in to the platform he is directed t
 	\end{center}
 \end{figure}
 
-As previously mentioned, manufacturers task is to add devices to platform, which they can later assign to customers that have bought them. Adding of devices is made available in two ways: through "Manage Devices" for custom made machines, or following a previously defined template. For the custom machines, first a machine needs to be created. Machine is an abstract concept that only has a name, which is used to organize devices. For example, AaltoCrane could be a machine and all sensors and actuators that are mounted on that crane are assigned to it. In the process of adding a device to the platform, a machine it belongs to needs to be specified. Note that in order to remove a machine from platform, its name needs to be typed in the text box to prevent accidental removal of machines. Two forms needed to complete this task are pictured on figure ~\ref{fig:AddMachineDevice}. 
+As previously mentioned, manufacturers task is to add devices to platform, which they can later assign to customers that have bought them. Adding of devices is made available in two ways: through "Manage Devices" page for custom made machines, or following a previously defined template. For the custom machines, first a machine needs to be created. Machine is an abstract concept that only has a name, which is used to organize devices. For example, AaltoCrane could be a machine and all sensors and actuators that are mounted on that crane are assigned to it. In the process of adding a device to the platform, a machine it belongs to needs to be specified. Note that in order to remove a machine from platform, its name needs to be typed in the text box to prevent accidental removal of machines. Two forms needed to complete this task are pictured on figure ~\ref{fig:AddMachineDevice}. 
 
 \begin{figure}[ht]
 	\begin{center}

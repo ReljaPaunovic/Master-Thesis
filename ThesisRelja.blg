@@ -9,14 +9,6 @@ Repeated entry---line 65 of file sources.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "ETSI1" isn't style-file defined
 --line 111 of file sources.bib
-Warning--I didn't find a database entry for "ThesisInstructions"
-Warning--I didn't find a database entry for "ThesisGrading"
-Warning--I didn't find a database entry for "TeXLive"
-Warning--I didn't find a database entry for "MiKTeX"
-Warning--I didn't find a database entry for "TeXlipse"
-Warning--I didn't find a database entry for "Eclipse"
-Warning--I didn't find a database entry for "HaapasaloThesis"
-Warning--I didn't find a database entry for "FerryProblem"
 Warning--empty journal in Brasser
 Warning--empty journal in Control2014
 Warning--empty journal in Smart
@@ -27,45 +19,45 @@ Warning--empty journal in Sanctus
 Warning--empty journal in Palattella2016
 Warning--empty journal in Rao2015
 Warning--empty journal in SPM
-You've used 15 entries,
+You've used 16 entries,
             2253 wiz_defined-function locations,
-            626 strings with 6576 characters,
-and the built_in function-call counts, 4471 in all, are:
-= -- 421
-> -- 285
+            615 strings with 6566 characters,
+and the built_in function-call counts, 4675 in all, are:
+= -- 440
+> -- 292
 < -- 0
-+ -- 117
-- -- 102
-* -- 341
-:= -- 804
-add.period$ -- 37
-call.type$ -- 15
-change.case$ -- 96
++ -- 120
+- -- 104
+* -- 353
+:= -- 840
+add.period$ -- 40
+call.type$ -- 16
+change.case$ -- 100
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 124
-empty$ -- 276
-format.name$ -- 102
-if$ -- 853
+cite$ -- 26
+duplicate$ -- 133
+empty$ -- 295
+format.name$ -- 104
+if$ -- 895
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 14
-newline$ -- 70
-num.names$ -- 30
-pop$ -- 94
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 75
+num.names$ -- 32
+pop$ -- 97
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 84
 quote$ -- 0
-skip$ -- 75
+skip$ -- 81
 stack$ -- 0
-substring$ -- 219
-swap$ -- 20
+substring$ -- 224
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 64
 warning$ -- 10
-while$ -- 42
-width$ -- 17
-write$ -- 125
+while$ -- 44
+width$ -- 18
+write$ -- 134
 (There was 1 error message)

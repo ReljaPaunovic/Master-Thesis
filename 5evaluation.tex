@@ -1,4 +1,154 @@
-\chapter{Evaluation}
+\chapter{Evaluation and Discussion}
 \label{chapter:evaluation}
 
-\fixme{Here I show how my implementation has met requirements}
+In the requirements chapter, the context for which this thesis is tailored for is described. This context described actors involved and how are they using these machines. From the context, a list of concrete requirements have been drawn and described in the remainder of requirements chapter. Following these requirements, I have implemented a prototype which aims to fulfill these requirements.
+
+In the following sections, I am evaluating the implementation described in chapter ~\ref{chapter:implementation}. Furthermore, I will discuss shortcomings and possible improvements to my solution. This evaluation is done by addressing every requirement described in chapter ~\ref{chapter:requirements}, consequently the current chapter will have similar structure. The general requirements will be addressed, followed by administrator, manufacturer and customer requirements.
+
+\section{Evaluation of General Requirements}
+
+General requirements are not tied to any specific role in the system, they apply to all users. These requirements are grouped into three categories. First group is related to security, second  regarding security, In the following section, requirements regarding security, user experience and functional requirements related to all roles in the system are evaluated. Furthermore, shortcomings are discussed and possible alternate solutions are described.
+
+\subsection{Security}
+
+Securing a web platform is not an easy task. As the security measures are evolving to fill security gaps, new methods on how to breach them are also emerging. Thus, securing a web platform is a process and it constantly needs to be improved. Following list will discuss every security requirement described in section ~\ref{subsubsection:security} and how the implementation has met them:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Only authenticated users can access platform}}: As previously mentioned in section ~\ref{section:technologiesUsed}, for this implementation a Django Framework was used. Django provides built-in decorator, named @login\_required, to restrict access to certain views. To make sure that only authenticated users can access the platform, every view has been secured with this decorator. 
+
+	\item \textbf{\textit{Platform needs be to robust against common cyberattacks}}: One big advantage of using Django Framework are the built-in protection mechanisms against cyberattacks. Protection against most common cyberattacks is discussed in the following list.
+
+		\begin{enumerate}
+		\setlength{\itemsep}{1pt}
+		\item \textbf{\textit{Cross-site scripting (XSS)}}: XSS attacks allow a user to inject client side scripts into the browsers of other users. Protection against this is ensured by using django templates, which escape specific characters which are particularly dangerous to HTML. This protection is not completely foolproof since there are cases when it fails. Such examples are well documented in django documentation, and all \verb|<style>| tags used in this implementation are checked against them.
+
+		\item \textbf{\textit{Cross site request forgery (CSRF)}}: CSRF attacks allow a malicious user to execute actions using the credentials of another user without that user's knowledge or consent. CSRF protection works by checking for a secret in each POST request. This ensures that a malicious user can not simply ``replay" a form POST to your website and have another logged in user unwittingly submit that form. Since the malicious user does not know the secret, which is stored in a cookie, he can not execute this request. CSRF protection in django is done by simply putting a {\% csrf\_token \%} tag in every form in a template and securing corresponding view with @csrf\_protect built-in decorator. The {\% csrf\_token \%} creates a hidden input field containing a secret which is then passed to the corresponding view.
+
+		\item \textbf{\textit{Clickjacking}}: Clickjacking is a type of attack where a malicious site wraps another site in a frame. In that way, an unsuspecting user is tricked into performing unintended actions on the target site. In order to protect against this attack, rendering in a frame has been disabled using django X-Frame-Options middleware.
+
+		\item \textbf{\textit{SQL injection}}: SQL injection is a type of attack where a malicious user is able to execute arbitrary SQL code on a database. Such attacks are usually prevented by sanitizing any input coming from an user. Using Django Framework, this is prevented by using querysets and in that way an underlying database driver will escape the resulting SQL. Django also provides developers a way to write raw queries which are vulnerable to SQL injection. In order to prevent SQL injection, raw queries are not used.
+
+		\item \textbf{\textit{Denial of service (DOS)}}: Not much can be done to prevent denial of service attacks at this stage, but rather during deployment of the platform on a server. By not allowing everybody to create accounts on this platform, effect of DOS attack is reduced but it is not eliminated.
+		\end{enumerate}
+
+	\item \textbf{\textit{Only authorized people can manipulate machines or devices}}: Django Framework provides support to write custom decorators, to secure access to views on almost any criteria. For this requirement, three different decorators have been made for each account type, namely manufacturer, customer and user. These decorators have been used for each view that belongs to manufacturer, customer or user accordingly. Furthermore, identity of a user is being checked every time a database is contacted in order to make sure that he has required access rights. In the previous point, protection against cyberattacks are discussed, making sure that user identity was not tampered with.
+
+	\item \textbf{\textit{Users personal information can only be changed by them}}: Similar to the previous point, user identity is determined every time user wants to see or change its information. And the validity of their identity is ensured by protecting against common cyberattacks.
+\end{enumerate}
+
+Along with security measures described in the list above, HTTPS protocol is used instead of HTTP. This functionality is enabled by configuring Django settings file to redirect all requests over HTTP to HTTPS and also by configuring a server where this platform is hosted.
+
+\subsection{User Experience}
+
+Requirements related to user experience are more of a guidelines than actual requirements, nonetheless, every well designed user interface is following them. Therefore, it is very important that they are satisfied to a logical extent. Following list will briefly discuss how the implementation described in chapter ~\ref{chapter:implementation} has followed Nielsen et. al.~\cite{nielsen199510} ten most important heuristics:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Visibility of system status}}: For almost every action that user performs, a message informing user about the success of the action is issued in form of a pop-up window. In case of removing a machine (or device) or a template, this message is not issued since the disappearance of the machine or template from the overview is evident.
+
+	\item \textbf{\textit{Match between system and the real world}}: Terms used in the system correspond to real world terms, few examples include a machine, device, manufacturer and customer. 
+
+	\item \textbf{\textit{User control and freedom}}: Actions available in this system are easily reversible, such actions include adding a machine, submitting a policy, and adding a template.
+
+	\item \textbf{\textit{Consistency and standards}}: All terms (such are machine, device, and template) correspond to real world terms and are used consistently throughout the platform.  
+
+	\item \textbf{\textit{Error prevention}}: This requirement is very hard to fulfill, since it is hard to predict kind of mistakes people make. Simple measures are taken in order to prevent mistakes since this platform is not intended for computer illiterate people. Preventing accidental removal of machines and templates is assured by forcing an user to type in the name of the machine or template before deleting them.
+
+	\item \textbf{\textit{Recognition rather than recall}}: Almost all actions in the system require user to select options from the list of available ones instead of typing them in, reducing memory load of the user. Exception are the removal of machine or template because of the reasons described in the previous point.
+
+	\item \textbf{\textit{Flexibility and efficiency of use}}: Tailoring of frequent actions is made available through templates, where manufacturers can simplify the way they add machines in the future by defining a template of a particular machine and instantiating them.
+
+	\item \textbf{\textit{Aesthetic and minimalist design}}: All elements described in chapter ~\ref{chapter:implementation} are necessary to provide desired functionality. Colors and shapes are designed to appeal to human visual cues.
+
+	\item \textbf{\textit{Help users recognize, diagnose, and recover from errors}}: Error messages are presented to a user in plain text, no codes are being used. In order to do so, custom pages for most common http errors are provided. Such errors include ``404 not found'' and ``500 internal server error''.
+
+	\item \textbf{\textit{Help and documentation}}: Home page of the platform, briefly describes how to use the platform.
+\end{enumerate}
+
+\subsection{Functional Requirements}
+
+List of functional requirements for all roles is a rather short list, although, still important for this platform to be usable. Following list will describe how my implementation has fulfilled these requirements:
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Users should be able to view their personal information and change it if needed}}: This functionality is provided by using a form shown on figure ~\ref{fig:UpdateAccount}.
+	\item \textbf{\textit{Manipulating single devices or all devices attached to a machine in one action}}: Forms shown on figure ~\ref{chapter:evaluation} and ~\ref{chapter:evaluation} allow assigning machines and submitting policies for all devices of a machine or single devices in one action, respectively.
+	\item \textbf{\textit{Navigation bar needs to be present}}: Standard navigational bar on the top of the screen, spanning the width of the screen is provided to navigate the website.
+\end{enumerate} 
+
+\section{Evaluation of Administrator Requirements}
+
+Administrator of the system has a responsibility to overlook the system and make sure that it operates smoothly. Administrator is required to create manufacturer accounts as mentioned in chapter ~\ref{chapter:requirements}. For the implementation of the administrator view, a django built-in administrator page have been used. This page provides many features, such as managing the user groups, and creating and deleting different types of accounts. For this work, I have reduced functionalities of this page to only be able to manage manufacturer accounts. Managing includes creating, deleting, modifying contents of the manufacturer accounts.
+
+\section{Evaluation of Manufacturer Requirements}
+
+As previously described in chapter ~\ref{chapter:implementation}, manufacturers have their own view of the platform. In the following list, manufacturer requirements are discussed, providing justification on how the implementation is meeting them, while pointing out shortcomings and possible alternate solutions.
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Create customer accounts}}: Fulfilling this requirement was simple. Form pictured on figure ~\ref{fig:CreateCustomer} allows a manufacturer to create customer accounts. Creating multiple accounts with the same username is not possible due to the database restrictions.
+
+	\item \textbf{\textit{Managing templates}}: Only manufacturer account has access to the "Manage Templates" page since they are the only ones who add machines or devices. This was ensured using custom made decorators.
+
+	\begin{enumerate}
+		\item \textbf{\textit{Add templates}}: Creating a new template is available through form shown in figure ~\ref{fig:addTemplate}. This is a minimalistic interface which allows the manufacturer to add templates of machines with corresponding number of devices. This solution lacks the sufficient fields to describe the machine. In other words, it is not very expressive, since it only requires information about the name of the machine and number of the devices attached to it. Whereas, real machines are usually comprised of multiple parts and each part has different types of devices attached. It would have been more meaningful to have detailed description of machines, its parts, and types of devices. However, this detailed  description of machines require comprehensive study of "digital twins", which is not the core of this work.
+
+		\item \textbf{\textit{Delete templates}}: Deleting templates is available through same form as for adding templates. Manufacturer is required to input all information about the template and click on a button "delete". It was implemented this way in order to minimize risk of deleting a template by accident.
+		\item \textbf{\textit{View templates}}: View of all available templates is also shown on the same figure. For this overview of templates, a table is used.  
+	\end{enumerate}
+
+	\item \textbf{\textit{Add machine through a template}}: On a figure ~\ref{fig:addTemplate}, a table with existing templates is shown. In the third column from the left, a button for each template is provided to instantiate a template. Clicking on a button "instantiate" opens a form to add a machine following that template as shown on figure ~\ref{fig:AddMachineViaTemplate}.
+
+	\item \textbf{\textit{Add custom machines}}: Adding custom machines is made available through "manage devices" page through forms shown on figure ~\ref{fig:AddMachineDevice}. These forms are on the "manage devices" page because they do not take much space and they are used frequently when managing devices.
+
+	
+	\item \textbf{\textit{Manage machines and devices}}: Managing devices for manufacturer is done through "manage devices" page.
+		\begin{enumerate}
+			\item \textbf{\textit{Assign machine or device to a customer}}: Assigning machines or devices to a customer is done though forms shown on figure ~\ref{fig:ManageDevicesCompany}. This implementation gives good overview of devices and to what machine are they attached to, although each assignment requires a separate call to the database. Alternate solution that would allow multiple assignments to be done in one call to the database would not give overview of devices. This solution would list all customers and provide a multiple check list to chose which devices to assign to them. Current solution was chosen because it is simpler to use.
+
+			\item \textbf{\textit{Remove assignment of machine or device}}: Removing assignment is done through the same form as for assigning, just by clicking on "remove customer" instead of "add customer".
+
+			\item \textbf{\textit{View assignments}}: Overview of assignments is shown on figure ~\ref{fig:DeviceAssignment}. For each device, assigned customers are listed.
+		\end{enumerate}
+
+	\item \textbf{\textit{Remove machines or devices}}: Removing machines from the system is done through the form shown on figure ~\ref{fig:AddMachineDevice}. For the same reason as for removing templates, manufacturer is required to input the name of the machine in order to delete it. Removing devices is done through forms shown on figure ~\ref{fig:ManageDevicesCompany} by clicking on "remove customer" button. Figure ~\ref{fig:ManageDevicesCompany} provides an overview of all devices, thus, this position of the button to remove customer is logical.
+
+	\item \textbf{\textit{Modify machines}}: Modifying machines is done one device at a time. Clicking on a device name in the form shown on figure ~\ref{fig:ManageDevicesCompany} opens a separate page where device information can be changed. 
+
+\end{enumerate}
+
+\section{Evaluation of Customer Requirements}
+
+As mentioned in chapter ~\ref{chapter:requirements}, having only one type of account for customer is not sufficient. Thus, in this work two types of customer accounts are created. These accounts are named customer and user accounts. Customer account is created by manufacturer, and user accounts are created by customer in order to assign responsibilities for different machines down the company hierarchy. In other words, user accounts are created for managers inside the customer company who are responsible for certain machines are people working with those machines. Following text will evaluate and discuss customer requirements arranged in two lists, exclusively customer requirements and requirements related to both customer and user, respectively.
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Create user accounts}}: Creating user accounts is made available to manufacturer through a form shown on figure ~\ref{fig:CreateUser}. This form has been created using Django ModelForm module, which creates forms directly from the models in the database, alike most of the forms used in this implementation. In this case, that model was User.
+
+	\item \textbf{\textit{Manage machines and devices}}: Implementation meets this requirement in a similar way as for the manufacturer. Differences between implementation for manufacturer and customer will be described below:
+
+		\begin{enumerate}
+			\item \textbf{\textit{Assign machine or device to user}}: Assigning machines and devices is done through the same form as one shown on figure ~\ref{fig:ManageDevicesCompany}, with two exceptions. These exceptions are: links to access device information and change it are disabled, and buttons to remove devices from the system are removed. Alternate solution for manufacturer view of the same functionality applies in this case too.
+
+			\item \textbf{\textit{Remove assignment of machine or device}}: In order to remove assignment, customer account performs the same action as for assigning, just by using "remove customer" instead of "add customer" button.
+
+			\item \textbf{\textit{View assignments}}: Full overview of assignments for customer is the same as for manufacturer. This overview is shown on figure ~\ref{fig:DeviceAssignment}
+		\end{enumerate}
+\end{enumerate}
+
+As previously mentioned, above list evaluates and discusses exclusively customer requirements. Following list contains evaluation and discussion of requirements related to both customers and users. 
+
+\begin{enumerate}
+	\setlength{\itemsep}{1pt}
+	\item \textbf{\textit{Allow access to machine or device}}: Who can access a device is described by a policy as explained in section ~\ref{CES}. Inserting or removing these policies from a policy database allows or denies a certain host to access a particular device. Forms used for manipulating these policies are shown on figure ~\ref{fig:ManagePolicies}. Policies allow high level of customization of the type of access that is allowed, although for this work only required protocol, direction of communication and duration of communication is used.
+		\begin{itemize}
+			\item \textbf{\textit{Duration}}: In order to define a period of duration of a policy, slightly modified date range picker \footnote{http://www.daterangepicker.com/} is used as shown on figure ~\ref{fig:ManagePolicies}.
+
+			\item \textbf{\textit{Direction of communication}}: All directions of communication are supported. They are defined in select field by choosing appropriate direction (Host -> Device, Device -> Host or Bi-directional).
+		\end{itemize}
+
+	\item \textbf{\textit{View who has access to your machines}}: Overview of policies inside a policy database are shown on figure ~\ref{fig:PolicyOverview}.
+
+	\item \textbf{\textit{Remove previously allowed access to machine or device}}: Overview of policies shown on figure ~\ref{fig:PolicyOverview} contains a button to remove a policy.
+\end{enumerate}

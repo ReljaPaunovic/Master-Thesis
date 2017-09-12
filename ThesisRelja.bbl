@@ -46,6 +46,12 @@
 {\sc Koeberl, P., Schulz, S., and Sadeghi, A.-r.}
 \newblock {TrustLite : A Security Architecture for Tiny Embedded Devices}.
 
+\bibitem{nielsen199510}
+{\sc Nielsen, J.}
+\newblock 10 usability heuristics for user interface design.
+\newblock {\em Fremont: Nielsen Norman Group.[Consult. 20 maio 2014].
+  Dispon{\'\i}vel na Internet\/} (1995).
+
 \bibitem{Sanctus}
 {\sc Noorman, J., Agten, P., Daniels, W., and Strackx, R.}
 \newblock {Sancus : Low-cost trustworthy extensible networked devices with a
