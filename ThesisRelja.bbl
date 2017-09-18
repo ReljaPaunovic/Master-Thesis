@@ -1,5 +1,40 @@
 \begin{thebibliography}{10}
 
+\bibitem{statista}
+{Internet of Things (IoT) connected devices installed base worldwide from 2015
+  to 2025}.
+\newblock
+  \url{https://www.statista.com/statistics/471264/iot-number-of-connected-devices-worldwide/},
+  2017.
+\newblock [Online].
+
+\bibitem{OMA}
+{Open Mobile Alliance Registry}.
+\newblock
+  \url{http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html},
+  2017.
+\newblock [Online].
+
+\bibitem{accenture}
+{Winning with the Industrial Internet of Things}.
+\newblock
+  \url{https://www.accenture.com/us-en/insight-industrial-internet-of-things},
+  2017.
+\newblock [Online].
+
+\bibitem{att}
+{\sc A.~Francillon, Q.~Nguyen, K. B.~R., and Tsudik, G.}
+\newblock {A minimalist approach to remote attestation}.
+\newblock {\em In Conference on Design, Automation and Test in Europe (DATE).
+  European Design and Automation Association\/} (2014).
+
+\bibitem{CARMA}
+{\sc A.~Vasudevan, J.~McCune, J. N. A.~P., and van Doorn, L.}
+\newblock {CARMA: A hardware tamper-resistant isolated execution environment on
+  commodity x86 platforms}.
+\newblock {\em In ACM Symposium on Information, Computer and Communications
+  Security (ASIACCS). ACM\/} (2012).
+
 \bibitem{Alaya2014}
 {\sc Alaya, M.~B., Banouar, Y., Monteil, T., Chassot, C., and Drira, K.}
 \newblock {OM2M : Extensible ETSI-compliant M2M service platform with
@@ -27,6 +62,11 @@
 \newblock {SMART : Secure and Minimal Architecture for (Establishing a Dynamic)
   Root of Trust}.
 
+\bibitem{1435744}
+{\sc Dzung, D., Naedele, M., Hoff, T. P.~V., and Crevatin, M.}
+\newblock Security for industrial communication systems.
+\newblock {\em Proceedings of the IEEE 93}, 6 (June 2005), 1152--1177.
+
 \bibitem{ETSI1}
 {\sc ETSI}.
 \newblock Machine-to-machine communications (m2m); functional architecture,
@@ -37,14 +77,39 @@
 \newblock {Architecting Information Centric ETSI-M2M systems}.
 \newblock 211--214.
 
+\bibitem{SMATT}
+{\sc H.~Park, D.~Seo, H.~L., and Perrig, A.}
+\newblock {SMATT: Smart meter attestation using multiple target selection and
+  copy-proof memory}.
+\newblock {\em In Computer Science and its Applications. Springer\/} (2012).
+
+\bibitem{PUFatt}
+{\sc J.~Kong, F.~Koushanfar, P. K. P. A.-R.~S., and Wachsmann, C.}
+\newblock {PUFatt: Embedded platform attestation based on novel processor-based
+  PUFs}.
+\newblock {\em In Design Automation Conference (DAC). ACM\/} (2014).
+
 \bibitem{Kantola}
 {\sc Kantola, R., and Beijar, N.}
 \newblock {Policy Based Communications for 5G Mobile with Customer Edge
   Switching}.
 
+\bibitem{5480987}
+{\sc Kantola, R.~A.}
+\newblock Implementing trust-to-trust with customer edge switching.
+\newblock In {\em 2010 IEEE 24th International Conference on Advanced
+  Information Networking and Applications Workshops\/} (April 2010),
+  pp.~1092--1099.
+
 \bibitem{TrustLite}
 {\sc Koeberl, P., Schulz, S., and Sadeghi, A.-r.}
 \newblock {TrustLite : A Security Architecture for Tiny Embedded Devices}.
+
+\bibitem{Nielsen:1994:EEP:191666.191729}
+{\sc Nielsen, J.}
+\newblock Enhancing the explanatory power of usability heuristics.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems\/} (New York, NY, USA, 1994), CHI '94, ACM, pp.~152--158.
 
 \bibitem{nielsen199510}
 {\sc Nielsen, J.}
@@ -79,9 +144,34 @@
 {\sc Raoul~Strackx, Frank~Piessens, B.~P.}
 \newblock {Efficient isolation of trusted subsystems in embedded systems}.
 
+\bibitem{Short}
+{\sc S.~Schulz, A.-R.~S., and Wachsmann, C.}
+\newblock {Short paper: Lightweight remote attestation using physical
+  functions}.
+\newblock {\em In ACM Conference on Wireless Network Security (WiSec). ACM\/}
+  (2011).
+
 \bibitem{Sadeghi2015}
 {\sc Sadeghi, A., Wachsmann, C., and Waidner, M.}
 \newblock {Security and privacy challenges in industrial internet of things}.
 \newblock {\em Proceedings of the 52nd\/} (2015).
+
+\bibitem{LWM2MImplementation2}
+{\sc Solano, A., Duro, N., Dormido, R., and González, P.}
+\newblock Smart vending machines in the era of internet of things.
+\newblock {\em Future Generation Computer Systems 76}, Supplement C (2017), 215
+  -- 220.
+
+\bibitem{LWM2MImplementation1}
+{\sc Tracey, D., and Sreenan, C.}
+\newblock Oma lwm2m in a holistic architecture for the internet of things.
+\newblock In {\em 2017 IEEE 14th International Conference on Networking,
+  Sensing and Control (ICNSC)\/} (May 2017), pp.~198--203.
+
+\bibitem{VIPER}
+{\sc Y.~Li, J. M.~M., and Perrig, A.}
+\newblock {VIPER: Verifying the integrity of peripherals firmware}.
+\newblock {\em In ACM Conference on Computer and Communications Security (CCS).
+  ACM\/} (2011).
 
 \end{thebibliography}

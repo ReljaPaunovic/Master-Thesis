@@ -10,7 +10,7 @@ This section describes three representative industrial use cases in order to hel
 
 \subsection{Smart Crane}
 
-KoneCranes have donated a smart crane to Aalto Industrial Campus as a tool for research. This crane is an indoor crane whose head (which carries the load) is mounted on rails allowing it to reach every position inside, crane is pictured on figure ~\ref{fig:KoneCranes-CraneK16052}. Following information was gathered through interviews with researchers and with KoneCranes and it will be used as a representative example for the rest of this work.
+KoneCranes have donated a smart crane to Aalto Industrial Campus as a tool for research. This crane is an indoor crane whose head (which carries the load) is mounted on rails allowing it to reach every position inside, crane is pictured on figure \ref{fig:KoneCranes-CraneK16052}. Following information was gathered through interviews with researchers and with KoneCranes and it will be used as a representative example for the rest of this work.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -40,7 +40,7 @@ Maintenance service makes use of usage data (alarms, usage parameters) to monito
 One part of the crane that needs to be changed most often are the breaks.
 Breaks have limited number of uses and this number is approximately known
 (there is a regulation in place that requires brakes to be changed regularly).
-In order to determine whether the breaks needs changing or repair, maintenance service requires information about their usage. This information is provided by a pressure sensor installed on the breaks. How much pressure is needed to make the crane head stop is directly proportional to weight the crane is carrying which can then be used to calculate the wear of the breaks.
+In order to determine, whether the breaks needs changing or repair, maintenance service requires information about their usage. This information is provided by a pressure sensor installed on the breaks. How much pressure is needed to make the crane head stop is directly proportional to weight the crane is carrying, which can then be used to calculate the wear of the breaks.
 
 Large and expensive machines like this crane are under warranties and in order to determine whether the warranty is valid, maintenance service needs to know if the crane has been used in a proper way. Therefore, they need information coming from different sensors installed on the crane. These sensors include: 
 
@@ -113,12 +113,12 @@ Remainder of this section is organized into four subsections. First subsection w
 
 \subsection{General Requirements}
 
-Following text will describe general requirements for this solution, drawn from the context explained in section ~\ref{section:context}. It will address requirements related to security, user experience and functional requirements not tied to any specific role.
+Following text will describe general requirements for this solution, drawn from the context explained in section \ref{section:context}. It will address requirements related to security, user experience and functional requirements not tied to any specific role.
 
 \subsubsection{Security}
 \label{subsubsection:security}
 
-This work describes a platform that is used manage access to machines and devices. These machines are usually very expensive, and produce data which could reveal trade secrets of their users if unauthorized people get access to them. Moreover, accessing these machines without permission can lead to serious property damage and injuries to people working with them. Therefore, making this platform secure is of great importance. Following list will describe requirements that must hold in order for the platform to be usable:
+This work describes a platform that is used manage access to machines and devices. These machines are usually very expensive, and produce data, which could reveal trade secrets of their users if unauthorized people get access to them. Moreover, accessing these machines without permission can lead to serious property damage and injuries to people working with them. Therefore, making this platform secure is of great importance. Following list will describe requirements that must hold in order for the platform to be usable:
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
@@ -133,7 +133,7 @@ This work describes a platform that is used manage access to machines and device
 
 \subsubsection{User Experience}
 
-Every user interface need to be designed in an intuitive way in order to reduce the amount of effort required to learn how to use it. Well designed interface positively affects the adoption rate which is highly important. Nielsen et. al.~\cite{nielsen199510} has proposed ten rules of thumb required for good design, which are widely accepted as good design rules. These rules are listed and briefly described bellow:
+Every user interface need to be designed in an intuitive way in order to reduce the amount of effort required to learn how to use it. Well designed interface positively affects the adoption rate which is highly important. Nielsen et. al. \cite{nielsen199510,Nielsen:1994:EEP:191666.191729} have proposed ten rules of thumb required for good design, which are widely accepted as good design rules. These rules are listed and briefly described bellow:
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
@@ -161,13 +161,13 @@ This requirements comes from the fact that, in order to qualify as a manufacture
 
 \subsection{Manufacturer Requirements}
 
-Manufacturers of smart industrial machines have a central role in the whole ecosystem, they are the providers of the service of selling or lending machines. Therefore, their requirements are of great importance. They have all necessary information about machines they are manufacturing, thus, they should be the ones adding the machines to the system and assigning them to the customers. Following list will explain all of their requirements thoroughly:
+Manufacturers of smart industrial machines have a central role in the whole ecosystem, they are the providers of the service of selling or lending machines. Therefore, their requirements are of great importance. They have all necessary information about machines they are manufacturing, and thus they should be the ones adding the machines to the system and assigning them to the customers. Following list will explain all of their requirements thoroughly:
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
 	\item \textbf{\textit{Create customer accounts}}: Allowing anybody to create a customer account may create many empty accounts that are only taking space in the database. Furthermore, there is no use for them if they do not possess any machines. Therefore, when customers buy or lend a machine \emph{for the first time}, their accounts need to be created. Depending on the needs of the customer, opening multiple accounts should be possible. 
 
-	\item \textbf{\textit{Managing templates}}: Almost every machine that is being produced is not one of a kind, it is made following a model. Manufacturers offer many different models to their customers, such as a smart crane pictured on figure ~\ref{fig:KoneCranes-CraneK16052} with model number K16052. Therefore, manufacturers need a way to define templates describing different models of their machines. These templates represent a simplified "digital twin" of a particular machine describing devices that are attached to it. This requirement consists of three smaller requirements:
+	\item \textbf{\textit{Managing templates}}: Almost every machine that is being produced is not one of a kind, it is made following a model. Manufacturers offer many different models to their customers, such as a smart crane pictured on figure \ref{fig:KoneCranes-CraneK16052} with model number K16052. Therefore, manufacturers need a way to define templates describing different models of their machines. These templates represent a simplified ``digital twin'' of a particular machine describing devices that are attached to it. This requirement consists of three smaller requirements:
 
 	\begin{enumerate}
 		\item \textbf{\textit{Add templates}}: Way to introduce new templates needs to be available.
@@ -185,7 +185,7 @@ Manufacturers of smart industrial machines have a central role in the whole ecos
 		\begin{enumerate}
 			\item \textbf{\textit{Assign machine or device to a customer}}: A way to assign a certain machine or device so it becomes visible to the customer needs to be available to the manufacturer.
 			\item \textbf{\textit{Remove assignment of machine or device}}: Reverting the action of assigning a machine or device to customer needs to be provided in order to account for faulty assignments, or if the machine or device was lent for a certain period of time.
-			\item \textbf{\textit{View assignments}}: In order to control which machines and devices are assigned to whom, an overview of assignments needs to be provided.
+			\item \textbf{\textit{View assignments}}: In order to control, which machines and devices are assigned to whom, an overview of assignments needs to be provided.
 		\end{enumerate}
 \end{enumerate}
 
@@ -209,7 +209,7 @@ Requirements listed above are only for the customer. User requirements are simil
 
 \begin{enumerate}
 	\setlength{\itemsep}{1pt}
-	\item \textbf{\textit{Allow access to machine or device}}: Allowing customers to define who can access the data their machines produce is highly important. Customer should be able to define access for the whole machine or parts of the machine by controlling access to particular devices, such as a temperature sensor on crane previously described in section ~\ref{section:context}. Additionally, customer needs to be able to define duration and direction of the communication, explained bellow:
+	\item \textbf{\textit{Allow access to machine or device}}: Allowing customers to define who can access the data their machines produce is highly important. Customer should be able to define access for the whole machine or parts of the machine by controlling access to particular devices, such as a temperature sensor on crane previously described in section \ref{section:context}. Additionally, customer needs to be able to define duration and direction of the communication, explained bellow:
 		\begin{itemize}
 			\item \textbf{\textit{Duration}}: Duration of allowed access is defined by start and end date.
 			\item \textbf{\textit{Direction of communication}}: Communication from customer device to the target means that only customer device can send data to the target while rejecting all requests from the target. Opposite direction means that the target can only send requests to the customer device, such request typically give instructions to the device. Allowing flexibility to define direction of communication is highly important to the customer.

@@ -11,11 +11,11 @@
 \contentsline {section}{\numberline {2.1}Internet of Things}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Industrial Internet of Things}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Open Issues}{5}{subsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Standardization}{6}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Standardization}{5}{subsubsection.2.1.2.1}
 \contentsline {subsubsection}{\numberline {2.1.2.2}Security and privacy}{7}{subsubsection.2.1.2.2}
 \contentsline {section}{\numberline {2.2}Notable standards}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Light Weight Machine to Machine (LWM2M)}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}World-wide-web Consortium (W3C) - Web Of Things (WOT)}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Light Weight Machine to Machine (LWM2M)}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}World-wide-web Consortium (W3C) - Web of Things (WoT)}{9}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Policy Based Communications for 5G Mobile with Customer Edge Switching}{12}{section.2.3}
 \contentsline {chapter}{\numberline {3}Requirements}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}Context}{14}{section.3.1}
@@ -52,5 +52,4 @@
 \contentsline {section}{\numberline {5.2}Evaluation of Administrator Requirements}{43}{section.5.2}
 \contentsline {section}{\numberline {5.3}Evaluation of Manufacturer Requirements}{43}{section.5.3}
 \contentsline {section}{\numberline {5.4}Evaluation of Customer Requirements}{45}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{48}{chapter.6}
-\contentsline {chapter}{\numberline {A}Appendix A}{51}{appendix.A}
+\contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}

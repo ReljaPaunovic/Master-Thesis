@@ -12,7 +12,7 @@
 \BOOKMARK [3][-]{subsubsection.2.1.2.2}{2.1.2.2 Security and privacy}{subsection.2.1.2}% 12
 \BOOKMARK [1][-]{section.2.2}{2.2 Notable standards}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Light Weight Machine to Machine \(LWM2M\)}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 World-wide-web Consortium \(W3C\) - Web Of Things \(WOT\)}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 World-wide-web Consortium \(W3C\) - Web of Things \(WoT\)}{section.2.2}% 15
 \BOOKMARK [1][-]{section.2.3}{2.3 Policy Based Communications for 5G Mobile with Customer Edge Switching}{chapter.2}% 16
 \BOOKMARK [0][]{chapter.3}{3 Requirements}{}% 17
 \BOOKMARK [1][-]{section.3.1}{3.1 Context}{chapter.3}% 18
@@ -49,5 +49,4 @@
 \BOOKMARK [1][-]{section.5.2}{5.2 Evaluation of Administrator Requirements}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.3}{5.3 Evaluation of Manufacturer Requirements}{chapter.5}% 50
 \BOOKMARK [1][-]{section.5.4}{5.4 Evaluation of Customer Requirements}{chapter.5}% 51
-\BOOKMARK [0][]{chapter.6}{6 Conclusion and Future Work}{}% 52
-\BOOKMARK [0][]{appendix.A}{A Appendix A}{}% 53
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 52

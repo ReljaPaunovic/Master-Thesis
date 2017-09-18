@@ -9,55 +9,90 @@ Repeated entry---line 65 of file sources.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "ETSI1" isn't style-file defined
 --line 111 of file sources.bib
+Warning--to sort, need author or key in statista
+Warning--to sort, need author or key in accenture
+Name 1 in "H. Park, D. Seo, H. Lee, and A. Perrig" has a comma at the end for entry SMATT
+while executing---line 1092 of file acm.bst
+Name 1 in "A. Francillon, Q. Nguyen, K. B. Rasmussen, and G. Tsudik" has a comma at the end for entry att
+while executing---line 1092 of file acm.bst
+Name 1 in "J. Kong, F. Koushanfar, P. K. Pendyala, A.-R. Sadeghi, and C. Wachsmann" has a comma at the end for entry PUFatt
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "J. Kong, F. Koushanfar, P. K. Pendyala, A.-R. Sadeghi, and C. Wachsmann" for entry PUFatt
+while executing---line 1092 of file acm.bst
+Name 1 in "Y. Li, J. M. McCune, and A. Perrig" has a comma at the end for entry VIPER
+while executing---line 1092 of file acm.bst
+Name 1 in "A. Vasudevan, J. McCune, J. Newsome, A. Perrig, and L. van Doorn" has a comma at the end for entry CARMA
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "A. Vasudevan, J. McCune, J. Newsome, A. Perrig, and L. van Doorn" for entry CARMA
+while executing---line 1092 of file acm.bst
+Name 1 in "S. Schulz, A.-R. Sadeghi, and C. Wachsmann" has a comma at the end for entry Short
+while executing---line 1092 of file acm.bst
+Warning--to sort, need author or key in OMA
+Name 1 in "A. Francillon, Q. Nguyen, K. B. Rasmussen, and G. Tsudik" has a comma at the end for entry att
+while executing---line 1133 of file acm.bst
+Name 1 in "A. Vasudevan, J. McCune, J. Newsome, A. Perrig, and L. van Doorn" has a comma at the end for entry CARMA
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "A. Vasudevan, J. McCune, J. Newsome, A. Perrig, and L. van Doorn" for entry CARMA
+while executing---line 1133 of file acm.bst
 Warning--empty journal in Brasser
 Warning--empty journal in Control2014
 Warning--empty journal in Smart
 Warning--empty journal in Grieco2014
+Name 1 in "H. Park, D. Seo, H. Lee, and A. Perrig" has a comma at the end for entry SMATT
+while executing---line 1133 of file acm.bst
+Name 1 in "J. Kong, F. Koushanfar, P. K. Pendyala, A.-R. Sadeghi, and C. Wachsmann" has a comma at the end for entry PUFatt
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "J. Kong, F. Koushanfar, P. K. Pendyala, A.-R. Sadeghi, and C. Wachsmann" for entry PUFatt
+while executing---line 1133 of file acm.bst
 Warning--empty journal in Kantola
 Warning--empty journal in TrustLite
 Warning--empty journal in Sanctus
 Warning--empty journal in Palattella2016
 Warning--empty journal in Rao2015
 Warning--empty journal in SPM
-You've used 16 entries,
+Name 1 in "S. Schulz, A.-R. Sadeghi, and C. Wachsmann" has a comma at the end for entry Short
+while executing---line 1133 of file acm.bst
+Name 1 in "Y. Li, J. M. McCune, and A. Perrig" has a comma at the end for entry VIPER
+while executing---line 1133 of file acm.bst
+You've used 30 entries,
             2253 wiz_defined-function locations,
-            615 strings with 6566 characters,
-and the built_in function-call counts, 4675 in all, are:
-= -- 440
-> -- 292
+            694 strings with 9191 characters,
+and the built_in function-call counts, 8703 in all, are:
+= -- 833
+> -- 437
 < -- 0
-+ -- 120
-- -- 104
-* -- 353
-:= -- 840
-add.period$ -- 40
-call.type$ -- 16
-change.case$ -- 100
++ -- 182
+- -- 152
+* -- 626
+:= -- 1450
+add.period$ -- 82
+call.type$ -- 30
+change.case$ -- 166
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 133
-empty$ -- 295
-format.name$ -- 104
-if$ -- 895
+cite$ -- 43
+duplicate$ -- 300
+empty$ -- 665
+format.name$ -- 152
+if$ -- 1784
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 15
-newline$ -- 75
-num.names$ -- 32
-pop$ -- 97
+int.to.str$ -- 30
+missing$ -- 26
+newline$ -- 145
+num.names$ -- 54
+pop$ -- 177
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 136
 quote$ -- 0
-skip$ -- 81
+skip$ -- 205
 stack$ -- 0
-substring$ -- 224
-swap$ -- 22
+substring$ -- 444
+swap$ -- 73
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
-warning$ -- 10
-while$ -- 44
-width$ -- 18
-write$ -- 134
-(There was 1 error message)
+type$ -- 120
+warning$ -- 13
+while$ -- 75
+width$ -- 32
+write$ -- 270
+(There were 17 error messages)
